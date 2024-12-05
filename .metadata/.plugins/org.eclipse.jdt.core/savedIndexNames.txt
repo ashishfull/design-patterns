@@ -1,4 +1,0 @@
-INDEX VERSION 1.134+C:\Users\Ashish Rai\Documents\edesign-patterns\.metadata\.plugins\org.eclipse.jdt.core
-1865797976.index
-3129788021.index
-2806127817.index

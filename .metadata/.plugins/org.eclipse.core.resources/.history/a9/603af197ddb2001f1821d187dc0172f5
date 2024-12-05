@@ -1,5 +1,0 @@
-package com.ashishrai.design_patterns.creational.singleton;
-
-public class HolderSingleton {
-
-}
