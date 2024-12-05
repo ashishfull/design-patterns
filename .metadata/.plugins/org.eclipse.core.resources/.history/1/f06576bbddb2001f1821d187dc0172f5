@@ -1,0 +1,27 @@
+package com.ashishrai.design_patterns.creational.singleton;
+
+public class DoubleCheckedEmployee {
+    private int empId;
+    private String empName;
+
+    // Volatile instance to ensure visibility in multi-threaded environments
+    private static volatile Employee instance = null;
+
+    // Private constructor to prevent instantiation
+    private Employee() {
+        System.out.println("Constructor called. Instance initialized.");
+    }
+
+    // Public method to provide a global access point
+    public static Employee getInstance() {
+        if (instance == null) { // First check (no locking here)
+            synchronized (Employee.class) {
+                if (instance == null) { // Second check (with locking)
+                    instance = new Employee();
+                }
+            }
+        }
+        return instance;
+    }
+}
+

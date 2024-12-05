@@ -1,0 +1,29 @@
+package com.ashishrai.designpattern.creational.singleton;
+
+public class Employee {
+	private int empId;
+	private String empName;
+	static Employee emp = null; // decalration
+
+	// default constructor
+	private Employee() {
+		System.out.println("Constructor will be called when you create an object");
+		System.out.println("Constructors are used to initialize the instance variables");
+	}
+
+	// static methods are called directly by prefixing the class name
+	// you don't need the object to access "static" method
+	public static Employee getEmployeeInstance() {
+
+		// This must return Employee object
+		// But, the same Employee object
+		// A logic that ensures only one object is created and returned the same
+		// for any number of requests
+		if (emp == null) {
+			emp = new Employee(); // this code will be executed only when emp is null
+		}
+
+		return emp;
+	}
+
+}

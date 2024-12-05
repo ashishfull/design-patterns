@@ -1,0 +1,14 @@
+
+package com.ashishrai.design_patterns.creational.singleton;
+
+public class TestSingleton {
+
+	public static void main(String[] args) {
+
+		DoubleCheckedEmployee e1 = DoubleCheckedEmployee.getInstance();
+		DoubleCheckedEmployee e2 = DoubleCheckedEmployee.getInstance();
+		// you can call the hashCode() method of the object
+		System.out.println(e1.hashCode());
+		System.out.println(e2.hashCode());
+	}
+}

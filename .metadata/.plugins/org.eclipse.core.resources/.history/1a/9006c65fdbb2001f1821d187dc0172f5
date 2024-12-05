@@ -1,0 +1,15 @@
+package com.ashishrai.design_patterns.creational.singleton;
+
+public class TestSingleton {
+
+	public static void main(String[] args) {
+		Employee e1 = Employee.getEmployeeInstance();
+		Employee e2 = Employee.getEmployeeInstance();
+
+		// you can call the hashCode() method of the object
+		System.out.println(e1.hashCode());
+		System.out.println(e2.hashCode());
+
+	}
+
+}
