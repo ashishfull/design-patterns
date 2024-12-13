@@ -2,7 +2,7 @@
 
 The Flyweight Design Pattern is a structural design pattern that helps to reduce the cost of creating and storing large numbers of similar objects. It enables a system to reuse existing instances to minimize memory usage and increase performance.
 
---
+---
 
 ## 🛠️ Why Flyweight Pattern?
 ➡️ Efficiently manage a large number of similar objects.
