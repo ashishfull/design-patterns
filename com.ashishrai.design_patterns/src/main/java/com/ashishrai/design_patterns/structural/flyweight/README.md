@@ -6,29 +6,38 @@ The Flyweight Design Pattern is a structural design pattern that helps to reduce
 
 ## 🛠️ Why Flyweight Pattern?
 ➡️ Efficiently manage a large number of similar objects.
+
 ➡️ Share common parts of an object across multiple instances.
+
 ➡️ Minimize memory footprint and improve performance.
 
 --
 
 ## 👥 Use Cases
 📑 Document editing software with similar formatting options.
+
 📉 Graph plotting software with shared axes and grid lines.
+
 🎨 Image processing applications with shared colors and patterns.
+
 📝 Text editors that use shared formatting options like fonts, styles, and sizes.
+
 🎮 Game development for reusing objects like tiles, characters, and obstacles.
 
 --
 
 ## ✅ Benefits
 🛠️ Reduced memory usage by sharing data among multiple objects.
+
 🛠️ Improved performance with fewer objects to manage.
+
 🛠️ Easier to manage a large number of similar objects.
 
 --
 
 ## ❌ Drawbacks
 📉 Increased complexity in managing shared states.
+
 📉 Potential inconsistency in shared states.
 
 --
