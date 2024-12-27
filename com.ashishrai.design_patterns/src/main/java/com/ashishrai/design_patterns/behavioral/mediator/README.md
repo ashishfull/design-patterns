@@ -37,8 +37,12 @@ CargoPlane C received message: Requesting permission to land.
 CargoPlane C sending message: Requesting permission to take off.
 PassengerPlane A received message: Requesting permission to take off.
 PassengerPlane B received message: Requesting permission to take off.
+```
 
 # Benefits of Mediator Design Pattern:
-## Reduced Complexity: Centralizes communication.
-## Improved Maintainability: Aircraft don't need to know about each other, reducing the dependencies.
-## Flexibility: New aircraft can be added without modifying other components.
+- **Reduced Complexity:** Centralizes communication.
+- **Improved Maintainability:** Aircraft don't need to know about each other, reducing the dependencies.
+- **Flexibility:** New aircraft can be added without modifying other components.
+
+# Conclusion:
+This pattern is useful in scenarios where multiple components need to communicate, but direct communication between them would create complex dependencies.
